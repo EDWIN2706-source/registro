@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+     <style>
+        html, body {
+            height: 100%;
+            background-color: #6c757d;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+   <div class="container-fluid">
+    <div class="row d-flex  align-items-center justify-content-center bg-success p-1 "> <!-- titulo 1 con imagen -->
+            <div class="col-5 text-end">
+             <img src="./COMPLEMENTOS/LOGO2.webp" class="img-fluid" alt=".."width="15%" height="15%">
+            </div>  
+            <div class="col-7">
+             <h1 class=" text-start  text-white mb-0">DespensaGO</h1>
+            </div>
+        </div>
+        <div class="row d-flex  align-items-center justify-content-center bg-success p-1 "> <!-- titulo 2 -->
+            <div class="col-12">
+             <h2 class=" text-center text-white mb-0 font-monospace">¡Merka con migo!</h2>
+            </div>      
+        </div>
+        <form id="miFormulario" class="needs-validation" novalidate>
+             <div class="row d-flex align-items-center justify-content-center p-3 bg-secondary"> <!-- CUESTIONARIO -->
+                  <div class="col-6 ">
+                      <label for="nombre" class="form-label">NOMBRE</label>
+                      <input type="text" class="form-control" id="nombre" required>
+                      <div class="invalid-feedback">El nombre es obligatorio.</div>
+                 </div>
+                 <div class="col-6 ">
+                       <label for="apellido" class="form-label">APELLIDO</label>
+                       <input type="text" class="form-control" id="apellido" required>
+                       <div class="invalid-feedback">El apellido es obligatorio.</div>
+                 </div>
+             </div>
+             <div class="row d-flex align-items-center justify-content-center p-3 bg-secondary">
+                 <div class="col-6">
+                     <label for="password" class="form-label">Password</label>
+                     <input type="password" class="form-control" id="password" required>
+                     <div class="invalid-feedback">La contraseña es obligatoria.</div>
+                 </div>
+                 <div class="col-6 ">
+                     <label for="email" class="form-label">Email</label>
+                     <input type="email" class="form-control" id="email" required>
+                     <div class="invalid-feedback">Ingresa un correo válido.</div>
+                 </div>
+              </div>
+             <div class="row d-flex align-items-center justify-content-center p-3 bg-secondary">
+                 <div class="col-6">
+                      <label for="direccion" class="form-label">DIRECCIÓN</label>
+                      <input type="text" class="form-control" id="direccion" required>
+                      <div class="invalid-feedback">La dirección es obligatoria.</div>
+                 </div>
+                 <div class="col-6 ">
+                     <label for="telefono" class="form-label">TELÉFONO</label>
+                     <input type="tel" class="form-control" id="telefono" pattern="[0-9]{7,15}" required>
+                     <div class="invalid-feedback">Ingresa un teléfono válido (solo números).</div>
+                 </div>
+             </div>
+             <div class="row d-flex align-items-center justify-content-center p-3 bg-secondary"><!-- boton -->
+                 <div class="col-12 d-flex  align-items-center justify-content-center">
+                     <button type="submit" class="btn btn-success border border-light">ENVIAR</button>
+                 </div>
+             </div>      
+            </div>
+      </form>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="USUARIO.JS"></script>
+</body>
+</html>
